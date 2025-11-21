@@ -1,0 +1,35 @@
+[33mcommit ef424b1130a13aed25ea37aeaf47775e882a3d88[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Kirill <kirill@otchik.ru>
+Date:   Fri Nov 21 13:45:56 2025 +0300
+
+    add badges in readme
+
+[33mcommit bdad640b3bd4f510c06e4793fa0c1f45fd59d274[m
+Author: Kirill <kirill@otchik.ru>
+Date:   Fri Nov 21 07:53:14 2025 +0300
+
+    Completed lesson 3
+
+[33mcommit 648da3447c0059ba0c127eb154c8b12eb342f8d3[m
+Author: Kirill <kirill@otchik.ru>
+Date:   Thu Nov 20 21:40:14 2025 +0300
+
+    Lessons 1 and 2 have been completed
+
+[33mcommit d3a96ac19454bd95e12298cb5436a82af08c9e87[m
+Author: KIRILL OTCHIK <67601079+otchik-k@users.noreply.github.com>
+Date:   Thu Nov 20 08:06:58 2025 +0300
+
+    Add README.md
+
+[33mcommit 58cc13525eda39a38978a5edd9860dcaec78f78c[m
+Author: KIRILL OTCHIK <67601079+otchik-k@users.noreply.github.com>
+Date:   Thu Nov 20 08:06:58 2025 +0300
+
+    Add README.md
+
+[33mcommit f9958f8ac72cc1a1bcd153ed559e539a8654232b[m
+Author: KIRILL OTCHIK <67601079+otchik-k@users.noreply.github.com>
+Date:   Thu Nov 20 08:06:56 2025 +0300
+
+    Add hexlet-check.yml
