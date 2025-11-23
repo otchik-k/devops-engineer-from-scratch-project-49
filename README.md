@@ -10,3 +10,4 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
+[![asciicast](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU.svg)](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU)
