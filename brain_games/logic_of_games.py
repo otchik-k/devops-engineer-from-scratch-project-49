@@ -1,4 +1,4 @@
-from brain_games.games import game_selector
+from brain_games.games import task_text_selector, game_selector
 from brain_games.user_interaction import get_user_answer, get_user_name, greet
 
 
@@ -6,10 +6,11 @@ def logic_of_games(game_name):
     greet()
     user_name = get_user_name()
     correct_answers_count = 0
-    game_info = ['question', 'correct_unswer', 'task_text']
+    game_info = ['question', 'correct_unswer']
+    task_text = task_text_selector(game_name)
+    print(task_text)
     while correct_answers_count < 3:
         game_info = game_selector(game_name)
-        print(game_info[2])
         print(f'Question: {game_info[0]}')
         user_answer = get_user_answer()
         if user_answer == game_info[1]:
