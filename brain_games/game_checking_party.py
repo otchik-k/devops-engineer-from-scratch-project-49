@@ -1,5 +1,7 @@
 import random
+
 import prompt
+
 from brain_games.welcome_user import welcome_user
 
 
