@@ -1,8 +1,8 @@
+import math
 import random
 
 
 def task_text_selector(game_name):
-    task_text = ''
     if game_name == 'brain_even':
         return 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
     if game_name == 'brain_calc':
@@ -14,6 +14,8 @@ def game_selector(game_name):
         return brain_even()
     if game_name == 'brain_calc':
         return brain_calc()
+    if game_name == 'brain_gcd':
+        return brain_gcd()
 
 
 def brain_even():
@@ -41,3 +43,11 @@ def brain_calc():
         math_formula = f'{x} * {y}'
         correct_answer = str(x * y)
     return [math_formula, correct_answer]
+
+
+def brain_gcd():
+    x = random.randint(1, 99)
+    y = random.randint(1, 99)
+    result = math.gcd(x, y)
+    task = f'{x} {y}'
+    return [task, str(result)]

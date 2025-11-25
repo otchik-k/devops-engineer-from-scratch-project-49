@@ -12,3 +12,4 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
 [![asciicast](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU.svg)](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU)
 [![asciicast](https://asciinema.org/a/m3wDUOGkVSLRNWOX3Yu5ALK5K.svg)](https://asciinema.org/a/m3wDUOGkVSLRNWOX3Yu5ALK5K)
+[![asciicast](https://asciinema.org/a/ZDYXVxNjOPAKutlos6EasfGfT.svg)](https://asciinema.org/a/ZDYXVxNjOPAKutlos6EasfGfT)

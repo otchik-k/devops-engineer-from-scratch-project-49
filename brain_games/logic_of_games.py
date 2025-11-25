@@ -1,4 +1,4 @@
-from brain_games.games import task_text_selector, game_selector
+from brain_games.games import game_selector, task_text_selector
 from brain_games.user_interaction import get_user_answer, get_user_name, greet
 
 
