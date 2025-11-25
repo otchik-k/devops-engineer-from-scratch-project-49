@@ -1,5 +1,6 @@
 import random
 
+
 def game_selector(game_name):
     if game_name == 'brain_even':
         return brain_even()
@@ -15,6 +16,7 @@ def brain_even():
     else:
         correct_answer = 'no'
     return [random_number, correct_answer, task]
+
 
 def brain_calc():
     task = 'What is the result of the expression?'
