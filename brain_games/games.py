@@ -7,6 +7,10 @@ def task_text_selector(game_name):
         return 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
     if game_name == 'brain_calc':
         return 'What is the result of the expression?'
+    if game_name == 'brain_gcd':
+        return 'Find the greatest common divisor of given numbers.'
+    if game_name == 'brain_progression':
+        return 'What number is missing in the progression?'
 
 
 def game_selector(game_name):
@@ -16,6 +20,8 @@ def game_selector(game_name):
         return brain_calc()
     if game_name == 'brain_gcd':
         return brain_gcd()
+    if game_name == 'brain_progression':
+        return brain_progression()
 
 
 def brain_even():
@@ -51,3 +57,17 @@ def brain_gcd():
     result = math.gcd(x, y)
     task = f'{x} {y}'
     return [task, str(result)]
+    
+    
+def brain_progression():
+    start_number = random.randint(1, 99)
+    difference = random.randint(1, 99)
+    number_count = random.randint(5, 10)
+    position_hidden_element = random.randint(0, number_count - 1)
+    arithmetic_sequence = []
+    for i in range(number_count):
+        member_progression = start_number + i * difference
+        arithmetic_sequence.append(member_progression)
+    correct_answer = str(arithmetic_sequence[position_hidden_element])
+    arithmetic_sequence[position_hidden_element] = '..'
+    return [arithmetic_sequence, correct_answer]
