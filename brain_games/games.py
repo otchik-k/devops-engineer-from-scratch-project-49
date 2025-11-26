@@ -11,6 +11,8 @@ def task_text_selector(game_name):
         return 'Find the greatest common divisor of given numbers.'
     if game_name == 'brain_progression':
         return 'What number is missing in the progression?'
+    if game_name == 'brain_prime':
+        return 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
 def game_selector(game_name):
@@ -22,6 +24,8 @@ def game_selector(game_name):
         return brain_gcd()
     if game_name == 'brain_progression':
         return brain_progression()
+    if game_name == 'brain_prime':
+        return brain_prime()
 
 
 def brain_even():
@@ -71,3 +75,14 @@ def brain_progression():
     correct_answer = str(arithmetic_sequence[position_hidden_element])
     arithmetic_sequence[position_hidden_element] = '..'
     return [arithmetic_sequence, correct_answer]
+    
+    
+def brain_prime():
+    x = random.randint(1, 99)
+    if x <= 1:
+        return [x, 'no']
+    for i in range (2, x):
+        if x % i == 0:
+            return [x, 'no']
+    return [x, 'yes']
+    
