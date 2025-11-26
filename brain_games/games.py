@@ -74,14 +74,17 @@ def brain_progression():
         arithmetic_sequence.append(member_progression)
     correct_answer = str(arithmetic_sequence[position_hidden_element])
     arithmetic_sequence[position_hidden_element] = '..'
-    return [arithmetic_sequence, correct_answer]
+    str_arithmetic_sequence = ''
+    for i in range(len(arithmetic_sequence)):
+        str_arithmetic_sequence = str_arithmetic_sequence + ' ' + str(arithmetic_sequence[i])
+    return [str_arithmetic_sequence, correct_answer]
     
     
 def brain_prime():
     x = random.randint(1, 99)
     if x <= 1:
         return [x, 'no']
-    for i in range (2, x):
+    for i in range(2, x):
         if x % i == 0:
             return [x, 'no']
     return [x, 'yes']
