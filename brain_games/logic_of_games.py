@@ -18,7 +18,8 @@ def logic_of_games(game_name):
             print('Correct!')
         else:
             correct_answers_count = 4
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{game_info[1]}\'.')
+            text = 'is wrong answer ;(. Correct answer was'
+            print(f'\'{user_answer}\' {text} \'{game_info[1]}\'.')
             print(f'Let\'s try again, {user_name}!')
 
     if correct_answers_count == 3:

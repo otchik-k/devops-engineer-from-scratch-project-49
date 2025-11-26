@@ -1,6 +1,8 @@
 import math
 import random
 
+prime_text = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
+
 
 def task_text_selector(game_name):
     if game_name == 'brain_even':
@@ -12,7 +14,7 @@ def task_text_selector(game_name):
     if game_name == 'brain_progression':
         return 'What number is missing in the progression?'
     if game_name == 'brain_prime':
-        return 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
+        return prime_text
 
 
 def game_selector(game_name):
@@ -74,11 +76,11 @@ def brain_progression():
         arithmetic_sequence.append(member_progression)
     correct_answer = str(arithmetic_sequence[position_hidden_element])
     arithmetic_sequence[position_hidden_element] = '..'
-    str_arithmetic_sequence = ''
+    str_sequence = ''
     for i in range(len(arithmetic_sequence)):
-        str_arithmetic_sequence = str_arithmetic_sequence + ' ' + str(arithmetic_sequence[i])
-    str_arithmetic_sequence = str_arithmetic_sequence.strip()
-    return [str_arithmetic_sequence, correct_answer]
+        str_sequence = str_sequence + ' ' + str(arithmetic_sequence[i])
+    str_sequence = str_sequence.strip()
+    return [str_sequence, correct_answer]
     
     
 def brain_prime():
