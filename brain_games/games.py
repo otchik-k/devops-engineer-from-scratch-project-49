@@ -77,6 +77,7 @@ def brain_progression():
     str_arithmetic_sequence = ''
     for i in range(len(arithmetic_sequence)):
         str_arithmetic_sequence = str_arithmetic_sequence + ' ' + str(arithmetic_sequence[i])
+    str_arithmetic_sequence = str_arithmetic_sequence.strip()
     return [str_arithmetic_sequence, correct_answer]
     
     
