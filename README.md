@@ -15,18 +15,18 @@
 Данный набор кода на Python представляет собой реализацию учебного проекта **"Игры разума"** курса **"DevOps-инженер с нуля"** на Hexlet<br>
 This set of Python code is an implementation of a learning project **"Mind Games"** course **"DevOps engineer from scratch"** on Hexlet<br>
 
-В проекте используется Python dthcbb 3.12, а так же библиотеки "prompt" и "math"
-The project uses Python dthcbb 3.12, as well as the "prompt" and "math" libraries
+В проекте используется Python dthcbb 3.12, а так же библиотеки "prompt" и "math"<br>
+The project uses Python dthcbb 3.12, as well as the "prompt" and "math" libraries<br>
 
-Для сборки и установки проекта нужно склонировать его себе на устройство и выполнить команды:
-To build and install a project, you need to tilt it onto your device and run the commands:
+Для сборки и установки проекта нужно склонировать его себе на устройство и выполнить команды:<br>
+To build and install a project, you need to tilt it onto your device and run the commands:<br>
 
 	make build
 
 	make package-install
 
-Для запуска игр используйте следующие команды:
-To start the games, use the following commands:
+Для запуска игр используйте следующие команды:<br>
+To start the games, use the following commands:<br>
 
 	brain-games
 
@@ -40,10 +40,10 @@ To start the games, use the following commands:
 
 	brain-prime
 
-Для конфигурирования программы в директории brain_games создан файл config.py
+Для конфигурирования программы в директории brain_games создан файл config.py<br>
 
-В проекте представлен набор игр, демонстрируемых на аскинемах ниже:
-The project features a set of games demonstrated on the askinems below:
+В проекте представлен набор игр, демонстрируемых на аскинемах ниже:<br>
+The project features a set of games demonstrated on the askinems below:<br>
 [![asciicast](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU.svg)](https://asciinema.org/a/gl63rkkKc0RmI3EDfiCv4deLU)
 [![asciicast](https://asciinema.org/a/m3wDUOGkVSLRNWOX3Yu5ALK5K.svg)](https://asciinema.org/a/m3wDUOGkVSLRNWOX3Yu5ALK5K)
 [![asciicast](https://asciinema.org/a/ZDYXVxNjOPAKutlos6EasfGfT.svg)](https://asciinema.org/a/ZDYXVxNjOPAKutlos6EasfGfT)
