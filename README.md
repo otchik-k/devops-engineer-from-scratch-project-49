@@ -27,26 +27,26 @@ The project uses Python dthcbb 3.12, as well as the "prompt" and "math" librarie
 
 To build and install a project, you need to tilt it onto your device and run the commands:
 
-	*make build*
+	make build
 
-	*make package-install*
+	make package-install
 
 
 Для запуска игр используйте следующие команды:
 
 To start the games, use the following commands:
 
-	*brain-games
+	brain-games
 
-	*brain-even
+	brain-even
 
-	*brain-calc
+	brain-calc
 
-	*brain-gcd
+	brain-gcd
 
-	*brain-progression
+	brain-progression
 
-	*brain-prime
+	brain-prime
 
 Для конфигурирования программы в директории brain_games создан файл config.py
 
