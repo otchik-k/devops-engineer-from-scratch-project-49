@@ -12,8 +12,8 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
 
 
-Данный набор кода на Python представляет собой реализацию учебного проекта **"Игры разума"** курса **"DevOps-инженер с нуля"** на Hexlet
-This set of Python code is an implementation of a learning project **"Mind Games"** course **"DevOps engineer from scratch"** on Hexlet
+Данный набор кода на Python представляет собой реализацию учебного проекта **"Игры разума"** курса **"DevOps-инженер с нуля"** на Hexlet<br>
+This set of Python code is an implementation of a learning project **"Mind Games"** course **"DevOps engineer from scratch"** on Hexlet<br>
 
 В проекте используется Python dthcbb 3.12, а так же библиотеки "prompt" и "math"
 The project uses Python dthcbb 3.12, as well as the "prompt" and "math" libraries
