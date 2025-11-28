@@ -12,7 +12,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=otchik-k_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=otchik-k_devops-engineer-from-scratch-project-49)
 
 
-#"Игры разума"
+#"Игры разума"#
 
 Данный набор кода на Python представляет собой реализацию учебного проекта **"Игры разума"** курса **"DevOps-инженер с нуля"** на Hexlet
 
