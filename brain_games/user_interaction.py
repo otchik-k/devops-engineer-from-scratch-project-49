@@ -1,10 +1,10 @@
 import prompt
 
-greeting_text = "Welcome to the Brain Games!"
+from brain_games.config import GREETING_TEXT
 
 
 def greet():
-    print(greeting_text)
+    print(GREETING_TEXT)
 
 
 def get_user_name():

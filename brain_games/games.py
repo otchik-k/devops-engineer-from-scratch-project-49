@@ -1,37 +1,62 @@
 import math
 import random
 
-prime_text = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
+from brain_games.config import (
+    BRAIN_CALC,
+    BRAIN_EVEN,
+    BRAIN_GCD,
+    BRAIN_PRIME,
+    BRAIN_PROGRESSION,
+    CALC_FINAL_RAND,
+    CALC_INIT_RAND,
+    COUNT_FINAL_RAND,
+    COUNT_INIT_RAND,
+    DIF_FINAL_RAND,
+    DIF_INIT_RAND,
+    EVEN_FINAL_RAND,
+    EVEN_INIT_RAND,
+    FIREST_NUM_FINAL_RAND,
+    FIRST_NUM_INIT_RAND,
+    GCD_FINAL_NUM_RAND,
+    GCD_INIT_NUM_RAND,
+    PRIME_FINAL_RAND,
+    PRIME_INIT_RAND,
+    TASK_CALC,
+    TASK_EVEN,
+    TASK_GCD,
+    TASK_PRIME,
+    TASK_PROGRESSION,
+)
 
 
 def task_text_selector(game_name):
-    if game_name == 'brain_even':
-        return 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
-    if game_name == 'brain_calc':
-        return 'What is the result of the expression?'
-    if game_name == 'brain_gcd':
-        return 'Find the greatest common divisor of given numbers.'
-    if game_name == 'brain_progression':
-        return 'What number is missing in the progression?'
-    if game_name == 'brain_prime':
-        return prime_text
+    if game_name == BRAIN_EVEN:
+        return TASK_EVEN
+    if game_name == BRAIN_CALC:
+        return TASK_CALC
+    if game_name == BRAIN_GCD:
+        return TASK_GCD
+    if game_name == BRAIN_PROGRESSION:
+        return TASK_PROGRESSION
+    if game_name == BRAIN_PRIME:
+        return TASK_PRIME
 
 
 def game_selector(game_name):
-    if game_name == 'brain_even':
+    if game_name == BRAIN_EVEN:
         return brain_even()
-    if game_name == 'brain_calc':
+    if game_name == BRAIN_CALC:
         return brain_calc()
-    if game_name == 'brain_gcd':
+    if game_name == BRAIN_GCD:
         return brain_gcd()
-    if game_name == 'brain_progression':
+    if game_name == BRAIN_PROGRESSION:
         return brain_progression()
-    if game_name == 'brain_prime':
+    if game_name == BRAIN_PRIME:
         return brain_prime()
 
 
 def brain_even():
-    random_number = random.randint(1, 99)
+    random_number = random.randint(EVEN_INIT_RAND, EVEN_FINAL_RAND)
     if random_number % 2 == 0:
         correct_answer = 'yes'
     else:
@@ -40,8 +65,9 @@ def brain_even():
 
 
 def brain_calc():
-    x = random.randint(1, 99)
-    y = random.randint(1, 99)
+    # Указывал X и Y как стандартные обозначения в математических формулах
+    x = random.randint(CALC_INIT_RAND, CALC_FINAL_RAND)
+    y = random.randint(CALC_INIT_RAND, CALC_FINAL_RAND)
     math_action = random.choice(['-', '+', '*'])
     math_formula = ''
     correct_answer = ''
@@ -58,17 +84,18 @@ def brain_calc():
 
 
 def brain_gcd():
-    x = random.randint(1, 99)
-    y = random.randint(1, 99)
+    # Указывал X и Y как стандартные обозначения в математических формулах
+    x = random.randint(GCD_INIT_NUM_RAND, GCD_FINAL_NUM_RAND)
+    y = random.randint(GCD_INIT_NUM_RAND, GCD_FINAL_NUM_RAND)
     result = math.gcd(x, y)
     task = f'{x} {y}'
     return [task, str(result)]
     
     
 def brain_progression():
-    start_number = random.randint(1, 99)
-    difference = random.randint(1, 99)
-    number_count = random.randint(5, 10)
+    start_number = random.randint(FIRST_NUM_INIT_RAND, FIREST_NUM_FINAL_RAND)
+    difference = random.randint(DIF_INIT_RAND, DIF_FINAL_RAND)
+    number_count = random.randint(COUNT_INIT_RAND, COUNT_FINAL_RAND)
     position_hidden_element = random.randint(0, number_count - 1)
     arithmetic_sequence = []
     for i in range(number_count):
@@ -84,7 +111,8 @@ def brain_progression():
     
     
 def brain_prime():
-    x = random.randint(1, 99)
+    # Указывал X и Y как стандартные обозначения в математических формулах
+    x = random.randint(PRIME_INIT_RAND, PRIME_FINAL_RAND)
     if x <= 1:
         return [x, 'no']
     for i in range(2, x):

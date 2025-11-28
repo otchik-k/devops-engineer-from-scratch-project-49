@@ -1,10 +1,7 @@
-from brain_games.cli import welcome_user
-from brain_games.module import greet
+from brain_games.user_interaction import get_user_name, greet
 
 
 def main():
     greet()
-    welcome_user()
-
-
-# main()
+    get_user_name()
+    
